@@ -1,0 +1,10 @@
+n = int(input())
+for _ in range(n):
+    cent = int(input())
+    print(cent//25, end=" ")
+    cent -= 25*(cent//25)
+    print(cent//10, end=" ")
+    cent -= 10*(cent//10)
+    print(cent//5, end=" ")
+    cent -= 5*(cent//5)
+    print(cent)
