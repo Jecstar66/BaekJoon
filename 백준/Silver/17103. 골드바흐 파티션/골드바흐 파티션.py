@@ -17,7 +17,7 @@ while pivot != len(arr):
             continue
             
         if num % arr[pivot] == 0:
-            arr.remove(num)
+            arr.remove(num) ## 여기서 문제 발생 -> remove : O(n)
             
     pivot += 1
  """
